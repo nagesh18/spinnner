@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nagesh.myapplication.MainActivity">
+    <com.example.library.BetterSpinner
+        android:id="@+id/spinner1"
+        android:layout_marginTop="20dp"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:hint="BetterSpinner"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <com.example.spinnerlibrary.MaterialSpinner
+        android:id="@+id/spinner"
+        app:ms_dropdown_max_height="360dp"
+        android:layout_marginTop="20dp"
+        app:ms_dropdown_height="wrap_content"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner1"
+        android:layout_alignLeft="@+id/spinner1"
+        android:layout_alignStart="@+id/spinner1" />
+    <com.example.library_material.MaterialBetterSpinner
+        android:id="@+id/spinner2"
+        android:layout_width="360dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:hint="MaterialBetterSpinner"
+        app:met_floatingLabel="normal"
+        android:layout_below="@+id/spinner"
+        android:layout_alignLeft="@+id/spinner"
+        android:layout_alignStart="@+id/spinner" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="137dp"
+        android:text="Button" />
+
+</RelativeLayout>
